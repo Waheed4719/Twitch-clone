@@ -94,6 +94,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  line-height: 20px;
   justify-content: flex-start;
 }
 
@@ -183,6 +184,13 @@ body {
   justify-content: center;
   background-color: var(--bg-color-light);
   color: #71747c;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon-button:hover {
+  background-color: var(--custom-button-bg);
+  color: white;
 }
 
 .custom-button {
@@ -191,6 +199,12 @@ body {
   color: white;
   padding: 10px 30px;
   width: fit-content;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.custom-button:hover {
+  background-color: rgba(96, 58, 205, 0.7);
 }
 
 .home {
@@ -199,8 +213,10 @@ body {
   /* grid-template-rows: 1fr 1fr;  */
   grid-template-areas:
     "recommended next-videos"
-    "item3 item3";
+    "live-channels live-channels";
   gap: 20px;
+  max-width: calc(1920px - 250px);
+  margin: auto;
 }
 
 .home > div {
@@ -221,7 +237,7 @@ body {
 }
 
 .home .live-channels {
-  grid-area: item3;
+  grid-area: live-channels;
 }
 
 .home .home-recommended .recommended-card {
@@ -259,6 +275,11 @@ body {
   align-items: center;
   gap: 10px;
 }
+
+.recommended-card .creator .name {
+  cursor: pointer;
+}
+
 .recommended-card .text-section {
   display: flex;
   justify-content: space-between;
@@ -368,6 +389,10 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.see-all-btn:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
 .next-video-card .creator {
   font-size: 14px;
   margin-top: 10px;
@@ -390,9 +415,16 @@ body {
   width: 30px;
   height: 30px;
 }
+
+.avatar.xs {
+  width: 20px;
+  height: 20px;
+}
+
 .avatar img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 .live-channel-card .content-description {
   display: flex;
@@ -407,6 +439,7 @@ body {
 
 .live-channel-card .content-description span {
   color: #603acd;
+  cursor: pointer;
 }
 
 .live-channel-list {

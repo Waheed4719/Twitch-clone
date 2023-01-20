@@ -1,21 +1,20 @@
 import React from "react";
 import Icon from "../Common/Icon";
-import Avatar2 from "../../assets/images/avatar2.png";
-import Avatar3 from "../../assets/images/avatar3.png";
-import Avatar4 from "../../assets/images/avatar4.png";
-import Avatar5 from "../../assets/images/avatar5.png";
-import Avatar6 from "../../assets/images/avatar6.png";
+import Person2 from "../../assets/images/avatar2.png";
+import Person3 from "../../assets/images/avatar3.png";
+import Person4 from "../../assets/images/avatar4.png";
+import Person5 from "../../assets/images/avatar5.png";
+import Person6 from "../../assets/images/avatar6.png";
+import Avatar from "../Common/Avatar";
 
-const avatars = [Avatar2, Avatar3, Avatar4, Avatar5, Avatar6];
+const avatars = [Person2, Person3, Person4, Person5, Person6];
 
 function MenuItem({ item, title, index }) {
   return (
     <h3 className={`menu-item`}>
       {console.log(title)}
       {title === "Following" ? (
-        <div className="avatar sm">
-          <img src={avatars[index]} alt="avatar" />
-        </div>
+        <Avatar size={"xs"} avatar={avatars[index]} />
       ) : (
         <Icon
           iconGroup={item.iconGroup}

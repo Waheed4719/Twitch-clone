@@ -1,7 +1,8 @@
 import React from "react";
 import Button from "../Common/Button";
 import Lolwp from "../../assets/images/lol-wp.jpg";
-import Avatar2 from "../../assets/images/avatar2.png";
+import Person2 from "../../assets/images/avatar2.png";
+import Avatar from "../Common/Avatar";
 
 function Recommended() {
   return (
@@ -26,10 +27,8 @@ function Recommended() {
           <div className="content-meta">
             <Button text="Watch now" />
             <div className="creator">
-              <div className="avatar sm">
-                <img src={Avatar2} alt="avatar" />
-              </div>
-              <p>RiotGames</p>
+              <Avatar size="sm" avatar={Person2} />
+              <span className="name">RiotGames</span>
             </div>
           </div>
         </div>

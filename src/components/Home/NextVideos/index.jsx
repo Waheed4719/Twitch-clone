@@ -1,12 +1,16 @@
 import React from "react";
 import Card from "./Card";
-import Avatar2 from "../../../assets/images/avatar2.png";
-import Avatar3 from "../../../assets/images/avatar3.png";
-import Avatar4 from "../../../assets/images/avatar4.png";
-import Avatar5 from "../../../assets/images/avatar5.png";
-import Avatar6 from "../../../assets/images/avatar6.png";
+import Person2 from "../../../assets/images/avatar2.png";
+import Person3 from "../../../assets/images/avatar3.png";
+import Person4 from "../../../assets/images/avatar4.png";
+import Person5 from "../../../assets/images/avatar5.png";
+import Person6 from "../../../assets/images/avatar6.png";
+import Lolwp3 from "../../../assets/images/lol-wp3.jpg";
+import Lolwp2 from "../../../assets/images/lol-wp2.jpg";
+import Gtawp from "../../../assets/images/gta-wp.png";
 
-const avatars = [Avatar2, Avatar3, Avatar4, Avatar5, Avatar6];
+const avatars = [Person2, Person3, Person4, Person5, Person6];
+const thumbnails = [Lolwp3, Lolwp2, Gtawp];
 
 function NextVideos() {
   return (
@@ -20,7 +24,7 @@ function NextVideos() {
         {Array(3)
           .fill(0)
           .map((_, index) => (
-            <Card image={avatars[index]} />
+            <Card image={thumbnails[index]} avatar={avatars[index]} />
           ))}
       </div>
     </div>

@@ -1,12 +1,11 @@
-import React from "react";
-import Lolwp from "../../../assets/images/lol-wp.jpg";
+import Avatar from "../../Common/Avatar";
 
-function Card({ image }) {
+function Card({ image, avatar }) {
   return (
     <div className="next-video-card">
       <div className="thumbnail">
         <picture>
-          <img src={Lolwp} alt="next-video" />
+          <img src={image} alt="next-video" />
         </picture>
       </div>
       <div className="content-meta-box">
@@ -22,9 +21,7 @@ function Card({ image }) {
           <span>8.2m views</span>
         </div>
         <div className="creator">
-          <div className="avatar sm">
-            <img src={image} alt="avatar" />
-          </div>
+          <Avatar size="sm" avatar={avatar} />
           <span> Epic Games </span>
         </div>
       </div>

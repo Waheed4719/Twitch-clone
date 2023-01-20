@@ -1,18 +1,17 @@
 import React from "react";
-import Lolwp from "../../../assets/images/lol-wp.jpg";
-function Card({ image }) {
+import Avatar from "../../Common/Avatar";
+
+function Card({ image, avatar }) {
   return (
     <div className="live-channel-card">
       <div className="thumbnail">
         <picture>
-          <img src={Lolwp} alt="live-channel" />
+          <img src={image} alt="live-channel" />
         </picture>
       </div>
       <div className="content-meta-box">
         <div className="content-description">
-          <div className="avatar">
-            <img src={image} alt="avatar" />
-          </div>
+          <Avatar size="md" avatar={avatar} />
           <div className="text-description">
             <h5>LCK Summer Split 2022</h5>
             <span> Epic Games </span>
