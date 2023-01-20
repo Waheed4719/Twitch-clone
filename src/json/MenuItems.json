@@ -1,0 +1,77 @@
+{
+    "Home": {
+        "name": "Home",
+        "items": [
+            {
+                "title": "My Videos",
+                "iconGroup": "md",
+                "icon": "MdOndemandVideo"
+            },
+            {
+                "title": "Feeds",
+                "iconGroup": "md",
+                "icon": "MdDynamicFeed"
+            },
+            {
+                "title": "Trending",
+                "iconGroup": "md",
+                "icon": "MdOutlineTrendingUp"
+            },
+            {
+                "title": "Following",
+                "iconGroup": "sl",
+                "icon": "SlUserFollowing"
+            }
+        ]
+    },
+    "Following": {
+        "name": "Following",
+        "items": [
+            {
+                "title": "Gordon_official",
+                "iconGroup": "md",
+                "icon": "MdOndemandVideo"
+            },
+            {
+                "title": "Maximus",
+                "iconGroup": "md",
+                "icon": "MdOndemandVideo"
+            },
+            {
+                "title": "Tiffany_",
+                "iconGroup": "md",
+                "icon": "MdOndemandVideo"
+            },
+            {
+                "title": "Tune_GTA",
+                "iconGroup": "md",
+                "icon": "MdOndemandVideo"
+            },
+            {
+                "title": "Mytho",
+                "iconGroup": "md",
+                "icon": "MdOndemandVideo"
+            }
+        ]
+    },
+    "User": {
+        "name": "User",
+        "items": [
+            {
+                "title": "Settings",
+                "iconGroup": "sl",
+                "icon": "SlSettings"
+            },
+            {
+                "title": "Chat",
+                "iconGroup": "bs",
+                "icon": "BsChat"
+            },
+            {
+                "title": "Trending",
+                "iconGroup": "md",
+                "icon": "MdOndemandVideo"
+            }
+        ]
+    }
+}
