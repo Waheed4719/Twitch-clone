@@ -1,7 +1,7 @@
 import React from "react";
-import LiveChannels from "./LiveChannels";
-import NextVideos from "./NextVideos";
-import Recommended from "./Recommended";
+import LiveChannels from "../../components/Home/LiveChannels";
+import NextVideos from "../../components/Home/NextVideos";
+import Recommended from "../../components/Home/Recommended";
 
 function index() {
   return (
