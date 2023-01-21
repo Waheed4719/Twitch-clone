@@ -3,7 +3,7 @@ import LiveChannels from "../../components/Home/LiveChannels";
 import NextVideos from "../../components/Home/NextVideos";
 import Recommended from "../../components/Home/Recommended";
 
-function index() {
+const index = () => {
   return (
     <div className="home">
       <Recommended />
