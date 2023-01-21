@@ -4,7 +4,7 @@ import Lolwp from "../../assets/images/lol-wp.jpg";
 import Person2 from "../../assets/images/avatar2.png";
 import Avatar from "../Common/Avatar";
 
-function Recommended() {
+const Recommended = () => {
   return (
     <div className="home-recommended">
       <h2 className="section-title">Recommended</h2>

@@ -1,7 +1,6 @@
-import React from "react";
 import Menu from "./Menu";
 
-function Sidebar() {
+const Sidebar = () => {
   return (
     <aside className="sidebar">
       <div className="brand">
