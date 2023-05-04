@@ -43,7 +43,6 @@ body {
 }
 
 .container {
-    width: calc(100% - 250px);
     margin-left: auto;
 }
 .inner-container {
@@ -53,6 +52,7 @@ body {
 }
 
 .sidebar {
+    z-index: 10;
     width: 250px;
     background-color: var(--bg-color);
     height: 100%;
@@ -209,11 +209,11 @@ body {
 
 .home {
     display: grid;
-    grid-template-columns: 2fr 1fr; /* two columns, first column is twice as wide as second column */
-    /* grid-template-rows: 1fr 1fr;  */
+    grid-template-columns: 1fr; /* two columns, first column is twice as wide as second column */
     grid-template-areas:
-        'recommended next-videos'
-        'live-channels live-channels';
+        'recommended'
+        'next-videos'
+        'live-channels';
     gap: 20px;
     max-width: calc(1920px - 250px);
     margin: auto;
@@ -251,6 +251,7 @@ body {
 }
 
 .recommended-card .thumbnail {
+    min-height: 300px;
     width: 100%;
     flex: 1;
     flex-direction: column;
@@ -317,8 +318,8 @@ body {
 }
 
 .next-video-list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 10px;
 }
 
@@ -351,7 +352,7 @@ body {
 .next-video-card .thumbnail {
     border-radius: 12px;
     overflow: hidden;
-    flex: 1.1;
+    flex: 0.6;
 }
 
 .next-video-card .thumbnail picture {
@@ -444,7 +445,7 @@ body {
 
 .live-channel-list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
@@ -498,4 +499,45 @@ body {
     justify-content: center;
     font-size: 14px;
     border: 2px solid var(--bg-color);
+}
+
+@media only screen and (min-width: 800px) {
+    .container {
+        width: calc(100% - 250px);
+    }
+    .sidebar {
+        background-color: var(--bg-color);
+    }
+    .next-video-list {
+        display: flex;
+        flex-direction: column;
+        /* grid-template-columns: repeat(2, 1fr); */
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .live-channel-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .home {
+        display: grid;
+        grid-template-columns: 2fr 1fr; /* two columns, first column is twice as wide as second column */
+        grid-template-areas:
+            'recommended next-videos'
+            'live-channels live-channels';
+        gap: 20px;
+        max-width: calc(1920px - 250px);
+        margin: auto;
+    }
+
+    .live-channel-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .next-video-list {
+        grid-template-columns: 1fr;
+    }
 }
